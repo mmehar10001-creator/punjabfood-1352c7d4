@@ -4,4 +4,15 @@
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
   "main": "src/server.ts",
+{
+  "name": "punjabfood",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-13",
+  "pipelines": [
+    {
+      "pipeline": "my-pipeline",
+      "binding": "PIPELINE"
+    }
+  ]
+}
 
