@@ -1,7 +1,8 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "tanstack-start-app",
-  "compatibility_date": "2025-09-24",
+  "name": "punjabfood-grabber",
+  "compatibility_date": "2025-01-01",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "src/server.ts",
+  "alias": {
+    "tanstack-start-injected-head-scripts:v": "./empty.js"
+  }
 }
