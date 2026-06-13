@@ -5,4 +5,4 @@
   "alias": {
     "tanstack-start-injected-head-scripts:v": "./empty.js"
   }
-}
+}`npx wrangler deploy --assets=./dist main
