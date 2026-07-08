@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { menu } from "@/lib/menu-data";
 import hero from "@/assets/hero-pulao.jpg";
-import realPulao from "@/assets/real-pulao-special-nokabab.jpg";
+import realPulao from "@/assets/real-pulao-single-nokabab.jpg";
 import realRoast from "@/assets/real-roast-half.jpg";
 import realKabab from "@/assets/real-shami-kabab.jpg";
 import zarda from "@/assets/zarda.jpg";
