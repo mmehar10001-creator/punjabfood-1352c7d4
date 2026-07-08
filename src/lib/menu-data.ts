@@ -1,4 +1,4 @@
-import pulaoSingleNoKabab from "@/assets/real-pulao-special-nokabab.jpg";
+import pulaoSingleNoKabab from "@/assets/real-pulao-single-nokabab.jpg";
 import pulaoSingleChoice from "@/assets/real-pulao-single-choice.jpg";
 import pulaoSingle from "@/assets/real-pulao-single-choice.jpg";
 import pulaoSpecialNoKabab from "@/assets/real-pulao-special-nokabab.jpg";
