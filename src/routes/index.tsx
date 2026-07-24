@@ -64,20 +64,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Featured dishes */}
-      <section className="py-20 px-6 bg-card">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
-            <div>
-              <p className="text-xs tracking-[0.4em] uppercase text-primary mb-3">Signature</p>
-              <h2 className="font-serif text-4xl md:text-5xl">House Favourites</h2>
-            </div>
-            <Link to="/menu" className="text-xs tracking-[0.25em] uppercase text-primary border-b border-primary pb-1">
-              Full Menu →
-            </Link>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      {/* Featured dishes */}
       <section className="py-16 sm:py-20 px-5 sm:px-6 bg-card">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-end justify-between mb-10 sm:mb-12 flex-wrap gap-4">
