@@ -77,13 +77,26 @@ function Index() {
             </Link>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {/* Featured dishes */}
+      <section className="py-16 sm:py-20 px-5 sm:px-6 bg-card">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex items-end justify-between mb-10 sm:mb-12 flex-wrap gap-4">
+            <div>
+              <p className="text-xs tracking-[0.35em] sm:tracking-[0.4em] uppercase text-primary mb-3">Signature</p>
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl">House Favourites</h2>
+            </div>
+            <Link to="/menu" className="text-xs tracking-[0.25em] uppercase text-primary border-b border-primary pb-1">
+              Full Menu →
+            </Link>
+          </div>
+          <div className="grid gap-5 sm:gap-6 grid-cols-2 lg:grid-cols-4">
             {featured.map((f) => (
               <div key={f.name} className="group">
                 <div className="aspect-square overflow-hidden bg-secondary">
                   <img src={f.img} alt={f.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
-                <h3 className="font-serif text-xl mt-4">{f.name}</h3>
-                <p className="text-sm text-primary mt-1">{f.price}</p>
+                <h3 className="font-serif text-lg sm:text-xl mt-3 sm:mt-4">{f.name}</h3>
+                <p className="text-xs sm:text-sm text-primary mt-1">{f.price}</p>
               </div>
             ))}
           </div>
@@ -91,25 +104,25 @@ function Index() {
       </section>
 
       {/* Quick menu preview */}
-      <section className="py-28 px-6">
+      <section className="py-16 sm:py-24 md:py-28 px-5 sm:px-6">
         <div className="mx-auto max-w-4xl">
-          <div className="text-center mb-16">
-            <p className="text-xs tracking-[0.4em] uppercase text-primary mb-3">Menu</p>
-            <h2 className="font-serif text-4xl md:text-5xl">{menu[0].title}</h2>
+          <div className="text-center mb-12 sm:mb-16">
+            <p className="text-xs tracking-[0.35em] sm:tracking-[0.4em] uppercase text-primary mb-3">Menu</p>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl">{menu[0].title}</h2>
           </div>
-          <div className="space-y-5">
+          <div className="space-y-4 sm:space-y-5">
             {menu[0].items.map((it, i) => (
-              <div key={i} className="flex items-baseline gap-4 border-b border-border pb-4">
-                <div className="flex-1">
-                  <h3 className="font-serif text-xl">{it.name}</h3>
-                  {it.desc && <p className="text-sm text-muted-foreground italic">{it.desc}</p>}
+              <div key={i} className="flex items-baseline gap-3 sm:gap-4 border-b border-border pb-3 sm:pb-4">
+                <div className="min-w-0 flex-1">
+                  <h3 className="font-serif text-lg sm:text-xl">{it.name}</h3>
+                  {it.desc && <p className="text-xs sm:text-sm text-muted-foreground italic">{it.desc}</p>}
                 </div>
-                <div className="flex-1 border-b border-dotted border-border/60 mb-2" />
-                <p className="text-primary font-medium">{it.price}</p>
+                <div className="hidden sm:block flex-1 border-b border-dotted border-border/60 mb-2" />
+                <p className="text-primary font-medium text-sm sm:text-base whitespace-nowrap">{it.price}</p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-12">
+          <div className="text-center mt-10 sm:mt-12">
             <Link to="/menu" className="text-xs tracking-[0.25em] uppercase border border-primary px-8 py-4 text-primary hover:bg-primary hover:text-primary-foreground transition-all inline-block">
               See Full Menu
             </Link>
@@ -118,13 +131,13 @@ function Index() {
       </section>
 
       {/* Catering CTA */}
-      <section className="relative py-32 px-6 overflow-hidden">
+      <section className="relative py-20 sm:py-28 md:py-32 px-5 sm:px-6 overflow-hidden">
         <img src={realRoast} alt="" className="absolute inset-0 h-full w-full object-cover opacity-25" loading="lazy" />
         <div className="absolute inset-0 bg-background/70" />
         <div className="relative z-10 mx-auto max-w-3xl text-center">
-          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-6">Weddings · Events · Functions</p>
-          <h2 className="font-serif text-4xl md:text-6xl mb-6">Catering Deg Service</h2>
-          <p className="text-muted-foreground text-lg mb-10">
+          <p className="text-xs tracking-[0.35em] sm:tracking-[0.4em] uppercase text-primary mb-5 sm:mb-6">Weddings · Events · Functions</p>
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl mb-5 sm:mb-6">Catering Deg Service</h2>
+          <p className="text-muted-foreground text-base sm:text-lg mb-8 sm:mb-10">
             From a 10 kg Sada Pulao Deg to a 12 kg Mutton Qorma — we cater shadi, gham, and every occasion with a single phone call.
           </p>
           <Link to="/catering" className="text-xs tracking-[0.25em] uppercase bg-primary text-primary-foreground px-8 py-4 hover:bg-primary/90 transition-all inline-block">
