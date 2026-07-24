@@ -29,22 +29,22 @@ function Index() {
   return (
     <SiteLayout>
       {/* Hero */}
-      <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
+      <section className="relative min-h-[600px] h-screen w-full overflow-hidden">
         <img src={hero} alt="Chicken Pulao" width={1920} height={1080} className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-6">
-          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-6">Rawalpindi · Since Years</p>
-          <h1 className="font-serif text-6xl md:text-8xl text-foreground max-w-4xl leading-[1.05]">
+        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-5 sm:px-6">
+          <p className="text-[10px] sm:text-xs tracking-[0.35em] sm:tracking-[0.4em] uppercase text-primary mb-5 sm:mb-6">Rawalpindi · Since Years</p>
+          <h1 className="font-serif text-5xl sm:text-6xl md:text-8xl text-foreground max-w-4xl leading-[1.05]">
             Punjab Foods
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-foreground/80 font-serif italic">
+          <p className="mt-5 sm:mt-6 text-base sm:text-lg md:text-xl text-foreground/80 font-serif italic">
             Pulao · Kabab · Roast · Deg
           </p>
-          <div className="mt-10 flex flex-wrap gap-4 justify-center">
-            <Link to="/menu" className="text-xs tracking-[0.25em] uppercase border border-primary px-8 py-4 text-primary hover:bg-primary hover:text-primary-foreground transition-all">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full max-w-xs sm:max-w-none">
+            <Link to="/menu" className="text-xs tracking-[0.25em] uppercase border border-primary px-6 sm:px-8 py-3.5 sm:py-4 text-primary hover:bg-primary hover:text-primary-foreground transition-all text-center">
               View Menu
             </Link>
-            <Link to="/catering" className="text-xs tracking-[0.25em] uppercase bg-primary text-primary-foreground px-8 py-4 hover:bg-primary/90 transition-all">
+            <Link to="/catering" className="text-xs tracking-[0.25em] uppercase bg-primary text-primary-foreground px-6 sm:px-8 py-3.5 sm:py-4 hover:bg-primary/90 transition-all text-center">
               Book Catering
             </Link>
           </div>
@@ -52,11 +52,11 @@ function Index() {
       </section>
 
       {/* Intro */}
-      <section className="py-28 px-6">
+      <section className="py-16 sm:py-24 md:py-28 px-5 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-6">Our Story</p>
-          <h2 className="font-serif text-4xl md:text-5xl mb-8">A taste of Punjab on every plate</h2>
-          <p className="text-muted-foreground leading-relaxed text-lg">
+          <p className="text-xs tracking-[0.35em] sm:tracking-[0.4em] uppercase text-primary mb-5 sm:mb-6">Our Story</p>
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8">A taste of Punjab on every plate</h2>
+          <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
             From the slow-cooked aroma of our signature Chicken Pulao to the smoky char of fresh Shami Kabab,
             every dish at Punjab Foods is prepared with traditional recipes, hand-picked spices, and the same
             care we'd serve our own family.
