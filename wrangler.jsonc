@@ -6,7 +6,7 @@
   "main": "src/server.ts",
 {
   "name": "punjabfood",
-  "main": "src/index.ts",
+  
   "compatibility_date": "2026-06-13",
   "pipelines": [
     {
@@ -14,5 +14,10 @@
       "binding": "PIPELINE"
     }
   ]
+}{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "punjabfood",
+  "compatibility_date": "2026-06-13",
+  "pages_build_output_dir": "dist"
 }
 
