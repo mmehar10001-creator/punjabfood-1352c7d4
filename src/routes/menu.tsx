@@ -17,30 +17,30 @@ export const Route = createFileRoute("/menu")({
 function MenuPage() {
   return (
     <SiteLayout>
-      <section className="pt-40 pb-16 px-6 text-center">
-        <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4">À la Carte</p>
-        <h1 className="font-serif text-5xl md:text-7xl">Our Menu</h1>
-        <p className="mt-4 text-2xl text-foreground/80" lang="ur" dir="rtl">ہمارا مینو</p>
-        <p className="mt-6 text-muted-foreground max-w-xl mx-auto">
+      <section className="pt-28 sm:pt-36 md:pt-40 pb-12 sm:pb-16 px-5 sm:px-6 text-center">
+        <p className="text-xs tracking-[0.35em] sm:tracking-[0.4em] uppercase text-primary mb-4">À la Carte</p>
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl">Our Menu</h1>
+        <p className="mt-4 text-xl sm:text-2xl text-foreground/80" lang="ur" dir="rtl">ہمارا مینو</p>
+        <p className="mt-5 sm:mt-6 text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
           Prepared fresh daily. All prices in Pakistani Rupees.
         </p>
       </section>
 
-      <section className="px-6 pb-24">
-        <div className="mx-auto max-w-6xl space-y-24">
+      <section className="px-5 sm:px-6 pb-20 sm:pb-24">
+        <div className="mx-auto max-w-6xl space-y-16 sm:space-y-24">
           {menu.map((section) => (
             <div key={section.title}>
-              <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-4">
-                  <span className="h-px w-12 bg-primary/60" />
-                  <h2 className="font-serif text-3xl md:text-4xl text-primary">{section.title}</h2>
-                  <span className="h-px w-12 bg-primary/60" />
+              <div className="text-center mb-10 sm:mb-12">
+                <div className="inline-flex items-center gap-3 sm:gap-4">
+                  <span className="h-px w-8 sm:w-12 bg-primary/60" />
+                  <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-primary">{section.title}</h2>
+                  <span className="h-px w-8 sm:w-12 bg-primary/60" />
                 </div>
                 {section.urdu && (
-                  <p className="mt-3 text-xl text-foreground/70" lang="ur" dir="rtl">{section.urdu}</p>
+                  <p className="mt-3 text-lg sm:text-xl text-foreground/70" lang="ur" dir="rtl">{section.urdu}</p>
                 )}
               </div>
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 {section.items.map((it, i) => (
                   <article key={i} className="group bg-card border border-border rounded-lg overflow-hidden flex flex-col shadow-sm hover:shadow-lg transition-shadow">
                     {it.image && (
