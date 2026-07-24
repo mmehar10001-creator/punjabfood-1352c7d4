@@ -55,20 +55,20 @@ function MenuPage() {
                         />
                       </div>
                     )}
-                    <div className="p-6 flex-1 flex flex-col gap-2">
-                      <h3 className="font-serif text-2xl font-semibold text-foreground leading-tight">
+                    <div className="p-5 sm:p-6 flex-1 flex flex-col gap-2">
+                      <h3 className="font-serif text-xl sm:text-2xl font-semibold text-foreground leading-tight">
                         {it.name}
                       </h3>
                       {it.urdu && (
-                        <p className="text-2xl text-foreground font-medium" lang="ur" dir="rtl">
+                        <p className="text-xl sm:text-2xl text-foreground font-medium" lang="ur" dir="rtl">
                           {it.urdu}
                         </p>
                       )}
                       {it.desc && (
-                        <p className="text-base text-muted-foreground">{it.desc}</p>
+                        <p className="text-sm sm:text-base text-muted-foreground">{it.desc}</p>
                       )}
                       <div className="mt-auto pt-3 border-t border-border/60">
-                        <p className="text-2xl font-bold text-primary">{it.price}</p>
+                        <p className="text-xl sm:text-2xl font-bold text-primary">{it.price}</p>
                       </div>
                     </div>
                   </article>
