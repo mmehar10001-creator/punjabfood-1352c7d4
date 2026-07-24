@@ -18,49 +18,49 @@ export const Route = createFileRoute("/catering")({
 function CateringPage() {
   return (
     <SiteLayout>
-      <section className="relative pt-40 pb-24 px-6 overflow-hidden">
+      <section className="relative pt-28 sm:pt-36 md:pt-40 pb-16 sm:pb-24 px-5 sm:px-6 overflow-hidden">
         <img src={deg} alt="" className="absolute inset-0 h-full w-full object-cover opacity-20" />
         <div className="absolute inset-0 bg-background/60" />
         <div className="relative z-10 text-center max-w-3xl mx-auto">
-          <p className="text-xs tracking-[0.4em] uppercase text-primary mb-4">Catering Service</p>
-          <h1 className="font-serif text-5xl md:text-7xl">Deg Menu</h1>
-          <p className="mt-6 text-muted-foreground text-lg">
+          <p className="text-xs tracking-[0.35em] sm:tracking-[0.4em] uppercase text-primary mb-4">Catering Service</p>
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl">Deg Menu</h1>
+          <p className="mt-5 sm:mt-6 text-muted-foreground text-base sm:text-lg">
             Shadi, gham, aur har taqreeb par parcel aap ke paas — ek phone call par.
           </p>
         </div>
       </section>
 
-      <section className="px-6 pb-24">
+      <section className="px-4 sm:px-6 pb-20 sm:pb-24">
         <div className="mx-auto max-w-5xl">
           <div className="overflow-hidden border border-border">
             <table className="w-full">
               <thead className="bg-card">
                 <tr>
-                  <th className="text-left p-5 text-xs uppercase tracking-[0.2em] text-primary">Dish</th>
-                  <th className="text-left p-5 text-xs uppercase tracking-[0.2em] text-primary hidden md:table-cell">Quantity</th>
-                  <th className="text-right p-5 text-xs uppercase tracking-[0.2em] text-primary">Price</th>
+                  <th className="text-left p-3 sm:p-5 text-xs uppercase tracking-[0.2em] text-primary">Dish</th>
+                  <th className="text-left p-3 sm:p-5 text-xs uppercase tracking-[0.2em] text-primary hidden md:table-cell">Quantity</th>
+                  <th className="text-right p-3 sm:p-5 text-xs uppercase tracking-[0.2em] text-primary">Price</th>
                 </tr>
               </thead>
               <tbody>
                 {degMenu.map((d, i) => (
                   <tr key={i} className="border-t border-border hover:bg-card/50 transition-colors">
-                    <td className="p-5 font-serif text-lg">
-                      <div className="flex items-baseline gap-3 flex-wrap">
+                    <td className="p-3 sm:p-5 font-serif text-base sm:text-lg align-top">
+                      <div className="flex items-baseline gap-2 sm:gap-3 flex-wrap">
                         <span>{d.name}</span>
-                        <span className="text-base text-foreground/60" lang="ur" dir="rtl">{d.urdu}</span>
+                        <span className="text-sm sm:text-base text-foreground/60" lang="ur" dir="rtl">{d.urdu}</span>
                       </div>
                       <p className="md:hidden text-xs text-muted-foreground italic mt-1">{d.qty}</p>
                     </td>
-                    <td className="p-5 text-muted-foreground text-sm hidden md:table-cell">{d.qty}</td>
-                    <td className="p-5 text-right text-primary font-medium whitespace-nowrap">{d.price}</td>
+                    <td className="p-3 sm:p-5 text-muted-foreground text-sm hidden md:table-cell">{d.qty}</td>
+                    <td className="p-3 sm:p-5 text-right text-primary font-medium whitespace-nowrap text-sm sm:text-base align-top">{d.price}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <div className="mt-16 text-center border border-primary/30 p-10 bg-card">
-            <h2 className="font-serif text-3xl mb-4">Place an Order</h2>
+          <div className="mt-12 sm:mt-16 text-center border border-primary/30 p-6 sm:p-10 bg-card">
+            <h2 className="font-serif text-2xl sm:text-3xl mb-4">Place an Order</h2>
             <p className="text-muted-foreground mb-6">Call us directly for catering bookings and bulk orders.</p>
             <div className="flex flex-wrap gap-4 justify-center">
               {contact.phones.map((p) => (
