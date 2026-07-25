@@ -8,6 +8,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 // prerender preview server (it looks for dist/server/server.js).
 export default defineConfig({
   tanstackStart: {
+    server: { entry: "server" },
     prerender: {
       enabled: true,
       crawlLinks: true,
@@ -21,3 +22,4 @@ export default defineConfig({
     },
   },
 });
+
