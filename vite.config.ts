@@ -11,5 +11,24 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
+    prerender: {
+      enabled: true,
+      crawlLinks: true,
+      pages: [
+        { path: "/" },
+        { path: "/menu" },
+        { path: "/catering" },
+        { path: "/about" },
+        { path: "/contact" },
+      ],
+    },
+    pages: [
+      { path: "/" },
+      { path: "/menu" },
+      { path: "/catering" },
+      { path: "/about" },
+      { path: "/contact" },
+    ],
   },
 });
+
